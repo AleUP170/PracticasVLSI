@@ -1,0 +1,21 @@
+Idea proyecto VLSI - Ugalde Pérez Alejandro
+
+Juego hecho en VHDL usando el puerto VGA de la FPGA para conectarse a un
+monitor, así como los puertos de I/O de la FPGA para hacer un control primitivo.
+
+La idea es hacer un juego estilo endless runner (el personaje se mueve automáticamente,
+y debe esquivar obstáculos para intentar llegar a una máxima distancia).
+
+Se tendrá un coche en una carretera y deberá esquivar y arrevasar coches.
+
+Se usará el puerto VGA de la FPGA para mostrar el juego en un monitor. Así mismo
+se usará un registro LFSR (linear-feedback shift register, o registro de corrimiento con
+retroalimentación lineal) para poder generar obstáculos de manera pseudoaleatoria.
+
+Se usará el reloj de la FPGA para controlar la lógica del juego, y se agregará un control
+por separado conectado a los pueros IO de la FPGA. El control tendrá los botones para controlar
+el carro y un botón de reinicio para reiniciar el juego.
+
+El puntaje se mostrará en los displays de 7 segmentos de la FPGA.
+
+https://www.instructables.com/id/Runner-Game-in-VHDL/ 
